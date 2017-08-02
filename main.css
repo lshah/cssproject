@@ -1,5 +1,5 @@
 #container {
-	
+	display: flex;
 }
 
 #circle {
@@ -94,7 +94,7 @@
 
 #whitecloud{
 	position: absolute;
-	margin-top: 8%;
+	margin-top: 7%;
 	margin-left: 3%;
 	height:30px;
 	width:60px;
@@ -135,14 +135,14 @@
 
 @keyframes moveleftcloud {
 	from {margin-left: 3%}
-	to {margin-left:33%;}
+	to {margin-left:30%;}
 }
 
 
 #graycloud{
 	position: absolute;
-	margin-top: 12%;
-	margin-left: 33%;
+	margin-top: 10%;
+	margin-left: 30%;
 	height:30px;
 	width:60px;
 	background-color: lightgray;
@@ -184,7 +184,7 @@
 }
 
 @keyframes moverightcloud {
-	from {margin-left: 33%}
+	from {margin-left: 30%}
 	to {margin-left:3%;}
 }
 
@@ -194,7 +194,7 @@
 #star4,
 #star5
 {
-	position: fixed;
+	position: absolute;
 	height:3px;
 	width:3px;
 	z-index:4;
@@ -223,14 +223,14 @@
 
 #star3{
 	margin-top: 6%;
-	margin-left: 22%;
+	margin-left: 18%;
 	animation-delay: 12s;
 	animation-duration: 3s;
 }
 
 #star4{
 	margin-top: 4%;
-	margin-left: 14%;
+	margin-left: 16%;
 	animation-delay: 4s;
 	animation-duration: 3s;
 	
