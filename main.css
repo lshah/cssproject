@@ -9,7 +9,7 @@
 	width: 500px;
 	background-color: white;
 	border: 1px solid gray;
-	background: linear-gradient(#33334d, #666699);
+	background: linear-gradient(#1f1f2e, #666699);
 	margin: 5% auto;
 	border-radius: 100%;
 }
@@ -189,7 +189,7 @@
 	to {margin-left:3%;}
 }
 
-#star1
+#star1,
 #star2,
 #star3,
 #star4,
@@ -214,6 +214,7 @@
 	margin-left: 25%;
 	animation-delay: 10s;
 	animation-duration: 6s;
+	
 	}
 
 #star2{
