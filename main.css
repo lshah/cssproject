@@ -259,3 +259,99 @@
 	width: 4px;
 	box-shadow: 0 0 7px white;}
 }
+
+
+#wave1 {
+	width: 475px;
+	height: 50px;
+	margin-top: -20%;
+	margin-left: 31%;
+	position: relative;
+	z-index: 15;
+	
+}
+
+#wave2 {
+	width: 380px;
+	height: 50px;
+	margin-top: 0%;
+	margin-left: 35%;
+	position: relative;
+	z-index: 15;	
+}
+
+#wave3 {
+	width: 320px;
+	height: 50px;
+	margin-top:1%;
+	margin-left: 37%;
+	position: relative;
+	z-index: 15;	
+}
+
+#wave1::before, #wave2::before, #wave3::before{
+	content:"";
+	position: absolute;
+	left: 0;
+	right:0;
+	top:0;
+	height: 10px;
+	background-size: 20px 20px;
+	background-image: radial-gradient(circle at 10px -4px, transparent 13px, #a3a3c2 18px);
+
+}
+
+#wave1::before {
+	width: 100px;
+	animation-name: wave1;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 35s;
+	animation-direction: alternate;
+}
+
+#wave2::before {
+	width: 75px;
+	animation-name: wave2;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 30s;
+	animation-direction: alternate;
+}
+
+#wave3::before {
+	width: 85px;
+	animation-name: wave3;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 40s;
+}
+
+
+
+@keyframes wave1 {
+	0% {
+		background-position: 0 0;
+		left:0;
+}
+	100%{background-position: 100px 0;
+		left: 350px;}
+}
+
+@keyframes wave2 {
+	0% {
+		background-position: 0 0;
+		left:0;
+}
+	100%{background-position: 100px 0;
+		left: 330px;}
+}
+
+@keyframes wave3 {
+	0% {
+		background-position: 0 0;
+		left:0;
+}
+	100%{background-position: 100px 0;
+		left: 265px;}
+}
