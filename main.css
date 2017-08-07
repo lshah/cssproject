@@ -1,0 +1,358 @@
+#container {
+	max-width: 100%;
+	max-height:100%;
+}
+
+#circle {
+	display: flex;
+	height: 500px;
+	width: 500px;
+	background-color: white;
+	border: 1px solid gray;
+	background: linear-gradient(#1f1f2e, #666699);
+	margin: 5% auto;
+	border-radius: 100%;
+}
+
+#mountain1,
+#mountain2,
+#mountain3,
+#mountain4,
+#mountain5,
+#mountain6,
+#mountain7,
+#mountain8{
+	width:0;
+	height:0;
+	border-left: 49px solid transparent;
+	border-right: 49px solid transparent;
+	-webkit-box-reflect: below 0px -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 60%, transparent 100%);
+	
+	
+}
+
+#mountain1{
+	margin-top: 170px;
+	margin-left: 0px;
+	border-bottom: 75px solid #52527a;
+	
+}
+
+#mountain2{
+	margin-top: 170px;
+	margin-left: -50px;
+	border-bottom: 75px solid #47476b;
+}
+
+#mountain3{
+	margin-top: 170px;
+	margin-left: -25px;
+	border-bottom: 75px solid #3d3d5c;
+}
+
+#mountain4{
+	margin-top: 180px;
+	margin-left: -120px;
+	border-bottom: 75px solid #b3b3cc;
+}
+
+#mountain5{
+	margin-top: 170px;
+	margin-left: 0;
+	border-bottom: 75px solid #52527a;
+}
+
+#mountain6{
+	margin-top: 180px;
+	margin-left: -35px;
+	border-bottom: 75px solid #47476b;
+	z-index: 0;
+}
+
+#mountain7{
+	margin-top: 200px;
+	margin-left: -25px;
+	border-bottom: 55px solid #b3b3cc;
+}
+
+#mountain8{
+	margin-top: 200px;
+	margin-left: -35px;
+	border-bottom: 65px solid #47476b;
+}
+
+#moon{
+	height: 50px;
+	width: 50px;
+	z-index: 1;
+	border-radius: 75%;
+	background-color: lightgray;
+	box-shadow: 0px 0px 100px white;
+	margin-left: -170px;
+	margin-top: 75px;
+	-webkit-box-reflect: below 250px -webkit-linear-gradient(bottom, transparent 0%, rgba(0, 0, 0, 0.1) 60%, transparent 100%);
+}
+
+#whitecloud{
+	position: absolute;
+	margin-top: 7%;
+	margin-left: 3%;
+	height:30px;
+	width:60px;
+	background-color: white;
+	border-radius: 50%;
+	-webkit-animation-name: moveleftcloud;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-duration: 25s;
+	-webkit-animation-iteration-count: infinite;
+	
+	-moz-animation-name: moveleftcloud;
+	-moz-animation-direction: alternate;
+	-moz-animation-duration: 25s;
+	-moz-animation-iteration-count: infinite;
+	
+	z-index: 3;
+}
+
+#cloud1{
+	position: absolute;
+	margin-top: 15%;
+	margin-left: 50%;
+	height:20px;
+	width:40px;
+	background-color: white;
+	border-radius: 50%;
+}
+
+#cloud2{
+	position: absolute;
+	margin-top: 8%;
+	margin-left: -35%;
+	height:20px;
+	width:40px;
+	background-color: white;
+	border-radius: 50%;
+}
+
+@keyframes moveleftcloud {
+	from {margin-left: 3%}
+	to {margin-left:30%;}
+}
+
+
+#graycloud{
+	position: absolute;
+	margin-top: 10%;
+	margin-left: 27%;
+	height:30px;
+	width:60px;
+	background-color: lightgray;
+	border-radius: 50%;
+	animation-name: moverightcloud;
+	animation-direction: alternate;
+	animation-duration: 27s;
+	animation-iteration-count: infinite;
+	
+	-moz-animation-name: moverightcloud;
+	-moz-animation-direction: alternate;
+	-moz-animation-duration: 27s;
+	-moz-animation-iteration-count: infinite;
+	
+	z-index: 0;
+	
+}
+
+#cloud3{
+	position: absolute;
+	margin-top: 15%;
+	margin-left: 50%;
+	height:20px;
+	width:40px;
+	background-color: lightgray;
+	border-radius: 50%;
+	
+}
+
+#cloud4{
+	position: absolute;
+	margin-top: 12%;
+	margin-left: -55%;
+	height:20px;
+	width:40px;
+	background-color: lightgray;
+	border-radius: 50%;
+
+}
+
+@keyframes moverightcloud {
+	from {margin-left: 27%}
+	to {margin-left:3%;}
+}
+
+#star1,
+#star2,
+#star3,
+#star4,
+#star5
+{
+	position: absolute;
+	height:3px;
+	width:3px;
+	z-index:4;
+	background-color: white;
+	border-radius: 50%;
+	box-shadow: 0 0 5px white;
+	background-repeat: repeat;
+	animation-name: starglow;	
+	animation-delay: 10s;	
+	animation-iteration-count: infinite;
+	-webkit-box-reflect: below 325px -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 60%, transparent 100%);
+}
+
+#star1{
+	margin-top: 5%;
+	margin-left: 25%;
+	animation-delay: 10s;
+	animation-duration: 6s;
+	
+	}
+
+#star2{
+	margin-top: 9%;
+	margin-left: 15%;
+	animation-delay: 12s;
+	animation-duration: 6s;
+	
+	}
+	
+
+#star3{
+	margin-top: 6%;
+	margin-left: 18%;
+	animation-delay: 12s;
+	animation-duration: 3s;
+	
+}
+
+#star4{
+	margin-top: 4%;
+	margin-left: 16%;
+	animation-delay: 4s;
+	animation-duration: 3s;
+	
+	
+}
+
+#star5{
+	margin-top: 9%;
+	margin-left: 6%;
+	animation-delay: 5s;
+	animation-duration: 5s;
+	
+}
+
+@keyframes starglow{
+	from {height:3px;
+	width:3px;
+	box-shadow: 0 0 5px white;}
+	to{height: 4px;
+	width: 4px;
+	box-shadow: 0 0 7px white;}
+}
+
+
+#wave1 {
+	
+	height: 50px;
+	margin-top: -20%;
+	margin-left: 41%;
+	position: relative;
+	z-index: 15;
+	
+}
+
+#wave2 {
+	
+	height: 50px;
+	margin-top: 0%;
+	margin-left: 35%;
+	position: relative;
+	z-index: 15;	
+}
+
+#wave3 {
+	
+	height: 50px;
+	margin-top:1%;
+	margin-left: 37%;
+	position: relative;
+	z-index: 15;	
+}
+
+#wave1::before, #wave2::before, #wave3::before{
+	content:"";
+	position: absolute;
+	left: 0;
+	right:0;
+	top:0;
+	height: 10px;
+	background-size: 20px 20px;
+	background-image: radial-gradient(circle at 10px -4px, transparent 13px, #8585ad 18px);
+
+}
+
+#wave1::before {
+	width: 100px;
+	animation-name: wave1;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 60s;
+	animation-direction: alternate;
+}
+
+#wave2::before {
+	width: 75px;
+	animation-name: wave2;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 65s;
+	animation-direction: alternate;
+}
+
+#wave3::before {
+	width: 85px;
+	animation-name: wave3;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 70s;
+	animation-direction: alternate;
+}
+
+
+
+@keyframes wave1 {
+	0% {
+		background-position: 0 0;
+		left:0;
+}
+	100%{background-position: 100px 0;
+		left: 250px;}
+}
+
+@keyframes wave2 {
+	0% {
+		background-position: 0 0;
+		left:0;
+}
+	100%{background-position: 100px 0;
+		left: 330px;}
+}
+
+@keyframes wave3 {
+	0% {
+		background-position: 0 0;
+		left:0;
+}
+	100%{background-position: 100px 0;
+		left: 245px;}
+}
