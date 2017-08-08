@@ -265,7 +265,7 @@
 	
 	height: 50px;
 	margin-top: -20%;
-	margin-left: 31%;
+	margin-left: 41%;
 	position: relative;
 	z-index: 15;
 	
@@ -302,7 +302,7 @@
 }
 
 #wave1::before {
-	width: 100px;
+	width: 65px;
 	animation-name: wave1;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
@@ -336,7 +336,7 @@
 		left:0;
 }
 	100%{background-position: 100px 0;
-		left: 350px;}
+		left: 250px;}
 }
 
 @keyframes wave2 {
